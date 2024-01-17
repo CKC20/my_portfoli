@@ -1,5 +1,5 @@
 import streamlit as st 
-# from streamlit_option_menu import option_menu
+from streamlit_option_menu import option_menu
 import streamlit_option_menu as so
 import requests
 from streamlit_lottie import st_lottie
@@ -36,7 +36,7 @@ st.subheader("          ",divider='rainbow')
 st.balloons()
 
 with st.container():
-    selected = so.option_menu(
+    selected = option_menu(
         menu_title = None,
         options=['About','Education','Projects','Contact'],
         icons=['person','book','code-slash','chat-left-text-fill'],
